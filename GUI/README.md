@@ -6,4 +6,4 @@ Una aplicación de [Sails v1](https://sailsjs.com)
 2. Abrir una terminal
 3. Dirigirse a la carpeta ```./GUI```
 4. Correr el comando ```sails lift```
-5. Abrir la dirección (localhost:1337)[localhost:1337]
+5. Abrir la dirección (http://localhost:1337)[http://localhost:1337]
