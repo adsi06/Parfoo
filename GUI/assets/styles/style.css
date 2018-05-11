@@ -1,5 +1,14 @@
 body {
   background-color: #FBFFF2;
+  font-family: 'Ropa Sans', sans-serif;
+  margin: 3% 0 5% 0;
+}
+h1 {
+  color: #509E51;
+  font-size: 340%;
+}
+h3 {
+  color: #7CA325;
 }
 .x_panel {
   background-color: white;
