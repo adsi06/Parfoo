@@ -1,14 +1,19 @@
 package com.Parfoo;
 
 /**
- * action -> 0 = recomendation; 1 = buy/sell
+ * action -> 0 = recomendacion; 1 = buy/sell
  * type -> 0 = buy; 1 -> sell;
  *
  */
 public class Recomendacion {
 	private int type;
 	private int action;
-
+	
+	/**
+	 * 
+	 * @param type buy == 0; sell == 1
+	 * @param action recomendacion == 0; peform buy/sell == 1
+	 */
 	public Recomendacion(int type, int action) {
 		super();
 		this.type = type;

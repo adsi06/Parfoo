@@ -86,67 +86,67 @@ public class Algoritmo {
      * 
      * Fin del algoritmo cuando el usuario así lo decida
      */
-    public void buySellAlgorithm(String symbol, double amoutSellPercentage, double cryptoBuyCuantity, int iterations){
-        //Iterator<Double> it = this.pseudoCalls.iterator();
-    		double difference, percentage, sufficientMoney, currentPrice, prevPrice = Cryptos.getPrecio(symbol);
-        int i = 0;
-                
-        while(i++ < iterations){
-        	
-			try {
-				TimeUnit.SECONDS.sleep(1); //Se espera 1 segundo entre cada iteración del algoritmo
-			} catch (InterruptedException e) {
-				LOGGER.error(e.getMessage().toString());
-			} 
-			
-            currentPrice = Cryptos.getPrecio(symbol);
-            difference = currentPrice - prevPrice;
+    public Recomendacion buySellAlgorithm(String symbol, double amoutSellPercentage, double cryptoBuyCuantity, double prevPrice){
+    		Recomendacion recomendation = null;;
+    		double difference, percentage, sufficientMoney, currentPrice;
+        currentPrice = Cryptos.getPrecio(symbol);
+        difference = currentPrice - prevPrice;
+
+        if(difference >= 0){//Venta en caso de alta de precio
+            percentage = difference / prevPrice;
             
-            System.out.println("Second i = " + i);
-            System.out.println("Price: " + currentPrice + " MN: " + this.currentMoney + " CR: " + this.currentCrypto + "\n");
-            LOGGER.info("Price: " + currentPrice + " MN: " + this.currentMoney + " CR: " + this.currentCrypto);
-            
-            if(difference >= 0){//Venta en caso de alta de precio
-                percentage = difference / prevPrice;
-                
-                if(percentage < this.SELL_ON_HIGH_PERCENTAGE){
-                    System.out.println("Recomendation: Sell on High");
-                } else {
-                    if(this.currentCrypto > 0){//Tengo cryptos para vender
-                        System.out.println("Action: Sell on High");
-                        this.currentMoney += this.currentCrypto * amoutSellPercentage * currentPrice;
-                        this.currentCrypto -= this.currentCrypto * amoutSellPercentage;
-                    }
+            if(percentage < this.SELL_ON_HIGH_PERCENTAGE){
+                recomendation = new Recomendacion(1, 0); //Recomendation: Sell on High
+            } else {
+                if(this.currentCrypto > 0){//Tengo cryptos para vender
+                    recomendation = new Recomendacion(1, 1); //Action: Sell on High
+                    this.currentMoney += this.currentCrypto * amoutSellPercentage * currentPrice;
+                    this.currentCrypto -= this.currentCrypto * amoutSellPercentage;
                 }
-            } else {//Venta o compra en caso de baja de precio
-                percentage = (-1) * difference / prevPrice;
-                
-                if(percentage < this.BUY_ON_LOW_PERCENTAGE){
-                    System.out.println("Recomendation: Buy on Low");
-                } else {
-                    if(this.currentMoney > 0){//Tengo dinero para comprar
-                        sufficientMoney = this.currentMoney - cryptoBuyCuantity * currentPrice;
+            }
+        } else {//Venta o compra en caso de baja de precio
+            percentage = (-1) * difference / prevPrice;
+            
+            if(percentage < this.BUY_ON_LOW_PERCENTAGE){
+            		recomendation = new Recomendacion(0, 0); //Recomendation: Buy on Low
+            } else {
+                if(this.currentMoney > 0){//Tengo dinero para comprar
+                    sufficientMoney = this.currentMoney - cryptoBuyCuantity * currentPrice;
+                    recomendation = new Recomendacion(0, 1); //Action: Buy on Low
+                    
+                    if(sufficientMoney >= 0){ //Me alcanza para comprar la cantidad que quiero
+                        this.currentMoney -= cryptoBuyCuantity * currentPrice;
+                        this.currentCrypto += cryptoBuyCuantity;
+                    } else { //Compra con cantidad controlada (Se utiliza un % de activos del usuario)
+                        double controlledMoney = this.currentMoney * this.CONTROLLED_BUY_PERCENTAGE; //Nueva cantidad a gastar
+                        double controlledCrypto = controlledMoney / currentPrice; //Nueva cantidad a comprar
+                        sufficientMoney = this.currentMoney - controlledCrypto * currentPrice;
                         
                         if(sufficientMoney >= 0){ //Me alcanza para comprar la cantidad que quiero
-                            System.out.println("Action: Buy on Low");
-                            this.currentMoney -= cryptoBuyCuantity * currentPrice;
-                            this.currentCrypto += cryptoBuyCuantity;
-                        } else { //Compra con cantidad controlada (Se utiliza un % de activos del usuario)
-                            double controlledMoney = this.currentMoney * this.CONTROLLED_BUY_PERCENTAGE; //Nueva cantidad a gastar
-                            double controlledCrypto = controlledMoney / currentPrice; //Nueva cantidad a comprar
-                            sufficientMoney = this.currentMoney - controlledCrypto * currentPrice;
-                            
-                            if(sufficientMoney >= 0){ //Me alcanza para comprar la cantidad que quiero
-                                System.out.println("Action: Buy on Low Controlled");
-                                this.currentMoney -= controlledCrypto * currentPrice;
-                                this.currentCrypto += controlledCrypto;
-                            } //Si sigue sin alcanzar entonces no se hace compra
+                            this.currentMoney -= controlledCrypto * currentPrice;
+                            this.currentCrypto += controlledCrypto;
                         }
                     }
                 }
             }
-            prevPrice = currentPrice;
         }
+        
+        return recomendation;
+    }
+    
+    public void runAnalisis(String symbol, int iterations) {
+    		int i = 0;
+    		while(i++ < iterations) {
+    			try {
+    				TimeUnit.SECONDS.sleep(1); //Se espera 1 segundo entre cada iteración del algoritmo
+    				
+    	            System.out.println("Second i = " + i);
+    	            //System.out.println("Price: " + currentPrice + " MN: " + this.currentMoney + " CR: " + this.currentCrypto + "\n");
+    	            //LOGGER.info("Price: " + currentPrice + " MN: " + this.currentMoney + " CR: " + this.currentCrypto);
+    			} catch (InterruptedException e) {
+    				LOGGER.error(e.getMessage().toString());
+    			}
+    		}
     }
     
     public static void main(String[] args) {
