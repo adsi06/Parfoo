@@ -13,7 +13,7 @@ public class Cryptos
 	private final static Logger LOG = Logger.getLogger(JsonReader.class);
 	public Criptomoneda cryp = new Criptomoneda();
 	
-	public static double precio(String symbol)  {
+	public static double getPrecio(String symbol)  {
 		double ret=0;
 		JsonReader jr = new JsonReader();
   		JSONObject json;
