@@ -1,4 +1,4 @@
-package mx.com.parfoo.tablero;
+package com.Parfoo;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -7,18 +7,18 @@ import org.apache.log4j.Logger;
 
 /*
  * El algoritmo fue desarrollado bajo los siguientes supuestos:
- *      Un individuo nunca comprará cryptos cuando el precio esté subiendo
- *      Un individuo nunca venderá cryptos cuando el precio esté bajando
+ *      Un individuo nunca comprarÃ¡ cryptos cuando el precio estÃ¡ subiendo
+ *      Un individuo nunca venderÃ¡ cryptos cuando el precio estÃ¡ bajando
  * 
- * Antes de probar en ambiente de producción se utilizan números random para
+ * Antes de probar en ambiente de producciÃ³n se utilizan nÃºmeros random para
  * simular variaciones en el precio a lo largo del tiempo
  * 
  * Mejoras:
  *      Solo se toman en cuenta cambios en el precio consecutivos. Lo cual, en 
- *      la vida real, prodría llevar a perdidas. Se debe "recordar" el precio 
- *      al que se compró para decidir si en un decremento en el precio vale la pena vender.
+ *      la vida real, prodrÃ­a llevar a perdidas. Se debe "recordar" el precio 
+ *      al que se comprÃ¡ para decidir si en un decremento en el precio vale la pena vender.
  *
- *      Falta añadir la conexión al WebService
+ *      Falta aÃ±adir la conexiÃ³n al WebService
  * 
  */
 public class Algoritmo {
@@ -34,8 +34,8 @@ public class Algoritmo {
      * @param initMoney Cantidad de dinero inicial del usuario
      * @param initCrypto Cantidad de cryptoactivos inicial del usuario
      * @param sellHighPercentage Porcentaje de aumento de precio para venta
-     * @param buyLowPercentage Porcentaje de disminución de precio para venta
-     * @param controlledBuyPercentage Porcentaje de utilización de dinero para venta controlada
+     * @param buyLowPercentage Porcentaje de disminuciï¿½n de precio para venta
+     * @param controlledBuyPercentage Porcentaje de utilizaciï¿½n de dinero para venta controlada
      */
     public Algoritmo(double initMoney, double initCrypto, double sellHighPercentage, double buyLowPercentage, double controlledBuyPercentage){
         this.pseudoCalls = new ArrayList<>();
@@ -48,7 +48,7 @@ public class Algoritmo {
     }
     
     /*
-    * Método que añade a un ArrayList numeros al azar multiplicados por una constante.
+    * MÃ©todo que aÃ±ade a un ArrayList numeros al azar multiplicados por una constante.
     * Son simulaciones de cambios en el precio a lo largo del tiempo.
     * Para simular peticiones al WebService
     */
@@ -59,8 +59,8 @@ public class Algoritmo {
     }
     
     /**
-     * @param amoutSellPercentage Porcentaje de cryptos a vender en una transacción
-     * @param cryptoBuyCuantity Cantidad de cryptos a comprar en una transacción
+     * @param amoutSellPercentage Porcentaje de cryptos a vender en una transacciï¿½n
+     * @param cryptoBuyCuantity Cantidad de cryptos a comprar en una transacciï¿½n
      * 
      * Algoritmo:
      * 
@@ -74,18 +74,18 @@ public class Algoritmo {
      *             Si es menor solo recomendaremos comprar
      *             en caso contrario:
      *                 Checamos si el usuario tiene dinero:
-     *                     Si NO lo tiene seguimos a la próxima iteración del algoritmo
+     *                     Si NO lo tiene seguimos a la prÃ³xima iteraciÃ³n del algoritmo
      *                     en caso contrario checamos si tiene dinero suficiente para comprar la cantidad deseada:
      *                         Si la tiene compramos y actualizamos cantidades de dinero y de crypto
      *                         en caso contrario calculamos la cantidad de compra controlada (Solo se compra con un porcentaje %, dado por el usuario, del dinero total)
      *                         checamos si tiene dinero suficiente para comprar la cantidad deseada:
      *                             Si la tiene compramos y actualizamos cantidades de dinero y de crypto
-     *                             en caso contrario seguimos a la próxima iteración del algoritmo
+     *                             en caso contrario seguimos a la prÃ³xima iteraciÃ³n del algoritmo
      * 
-     * Fin del algoritmo cuando el usuario así lo decida
+     * Fin del algoritmo cuando el usuario asÃ­ lo decida
      */
     public void buySellAlgorithm(double amoutSellPercentage, double cryptoBuyCuantity){
-        Iterator it = this.pseudoCalls.iterator();
+        Iterator<Double> it = this.pseudoCalls.iterator();
         double difference, percentage, sufficientMoney, currentPrice, prevPrice = pseudoCalls.get(0);
         int i = 0;
                 
@@ -95,6 +95,7 @@ public class Algoritmo {
             
             System.out.println("Momento i = " + ++i);
             System.out.println("Price: " + currentPrice + " MN: " + this.currentMoney + " CR: " + this.currentCrypto);
+            LOGGER.info("Price: " + currentPrice + " MN: " + this.currentMoney + " CR: " + this.currentCrypto);
             
             if(difference >= 0){//Venta en caso de alta de precio
                 percentage = difference / prevPrice;
