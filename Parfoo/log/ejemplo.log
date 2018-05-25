@@ -322,3 +322,346 @@
 2018-05-25 10:41:13:620 INFO  Algoritmo:105 - Price: 7485.0 MN: 53450.0 CR: 5.0
 2018-05-25 10:41:14:811 INFO  Algoritmo:105 - Price: 7481.0 MN: 53450.0 CR: 5.0
 2018-05-25 10:41:15:998 INFO  Algoritmo:105 - Price: 7481.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:13:636 INFO  Algoritmo:95 - Price: 7488.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:15:286 INFO  Algoritmo:95 - Price: 7488.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:16:915 INFO  Algoritmo:95 - Price: 7489.74 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:18:276 INFO  Algoritmo:95 - Price: 7489.74 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:19:626 INFO  Algoritmo:95 - Price: 7490.15 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:20:988 INFO  Algoritmo:95 - Price: 7488.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:22:635 INFO  Algoritmo:95 - Price: 7488.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:24:013 INFO  Algoritmo:95 - Price: 7488.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:25:379 INFO  Algoritmo:95 - Price: 7488.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:27:021 INFO  Algoritmo:95 - Price: 7488.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:28:652 INFO  Algoritmo:95 - Price: 7488.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:30:017 INFO  Algoritmo:95 - Price: 7488.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:31:389 INFO  Algoritmo:95 - Price: 7488.94 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:33:296 INFO  Algoritmo:95 - Price: 7488.01 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:34:929 INFO  Algoritmo:95 - Price: 7488.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:36:553 INFO  Algoritmo:95 - Price: 7488.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:38:184 INFO  Algoritmo:95 - Price: 7488.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:40:065 INFO  Algoritmo:95 - Price: 7490.15 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:41:712 INFO  Algoritmo:95 - Price: 7490.15 MN: 53450.0 CR: 5.0
+2018-05-25 11:23:43:063 INFO  Algoritmo:95 - Price: 7490.15 MN: 53450.0 CR: 5.0
+2018-05-25 11:25:40:871 INFO  Algoritmo:95 - Price: 7496.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:25:42:264 INFO  Algoritmo:95 - Price: 7496.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:25:44:167 INFO  Algoritmo:95 - Price: 7495.52 MN: 53450.0 CR: 5.0
+2018-05-25 11:25:45:545 INFO  Algoritmo:95 - Price: 7499.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:25:47:167 INFO  Algoritmo:95 - Price: 7499.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:25:48:783 INFO  Algoritmo:95 - Price: 7495.53 MN: 53450.0 CR: 5.0
+2018-05-25 11:25:50:402 INFO  Algoritmo:95 - Price: 7495.52 MN: 53450.0 CR: 5.0
+2018-05-25 11:25:52:041 INFO  Algoritmo:95 - Price: 7495.52 MN: 53450.0 CR: 5.0
+2018-05-25 11:25:53:419 INFO  Algoritmo:95 - Price: 7494.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:25:55:037 INFO  Algoritmo:95 - Price: 7494.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:25:56:921 INFO  Algoritmo:95 - Price: 7495.52 MN: 53450.0 CR: 5.0
+2018-05-25 11:25:58:538 INFO  Algoritmo:95 - Price: 7495.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:26:00:157 INFO  Algoritmo:95 - Price: 7494.55 MN: 53450.0 CR: 5.0
+2018-05-25 11:26:01:520 INFO  Algoritmo:95 - Price: 7491.03 MN: 53450.0 CR: 5.0
+2018-05-25 11:26:03:137 INFO  Algoritmo:95 - Price: 7491.03 MN: 53450.0 CR: 5.0
+2018-05-25 11:26:04:745 INFO  Algoritmo:95 - Price: 7491.03 MN: 53450.0 CR: 5.0
+2018-05-25 11:26:07:106 INFO  Algoritmo:95 - Price: 7494.53 MN: 53450.0 CR: 5.0
+2018-05-25 11:26:08:462 INFO  Algoritmo:95 - Price: 7491.04 MN: 53450.0 CR: 5.0
+2018-05-25 11:26:09:823 INFO  Algoritmo:95 - Price: 7491.03 MN: 53450.0 CR: 5.0
+2018-05-25 11:26:11:186 INFO  Algoritmo:95 - Price: 7491.03 MN: 53450.0 CR: 5.0
+2018-05-25 11:27:44:945 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:27:46:350 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:27:47:731 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:27:49:114 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:27:50:486 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:27:51:866 INFO  Algoritmo:95 - Difference: -2.5399999999999636 MN: 53450.0 CR: 5.0
+2018-05-25 11:27:53:232 INFO  Algoritmo:95 - Difference: -0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:27:54:594 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:27:55:953 INFO  Algoritmo:95 - Difference: 2.25 MN: 53450.0 CR: 5.0
+2018-05-25 11:27:58:354 INFO  Algoritmo:95 - Difference: -0.9200000000000728 MN: 53450.0 CR: 5.0
+2018-05-25 11:28:00:680 INFO  Algoritmo:95 - Difference: -2.4899999999997817 MN: 53450.0 CR: 5.0
+2018-05-25 11:28:02:065 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:28:03:425 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:28:04:784 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:28:06:141 INFO  Algoritmo:95 - Difference: 2.5100000000002183 MN: 53450.0 CR: 5.0
+2018-05-25 11:28:07:533 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:28:08:913 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:28:10:319 INFO  Algoritmo:95 - Difference: 0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:28:12:019 INFO  Algoritmo:95 - Difference: -0.5700000000006185 MN: 53450.0 CR: 5.0
+2018-05-25 11:28:13:697 INFO  Algoritmo:95 - Difference: 0.3500000000003638 MN: 53450.0 CR: 5.0
+2018-05-25 11:29:56:836 INFO  Algoritmo:95 - Difference: 5.350000000000364 MN: 53450.0 CR: 5.0
+2018-05-25 11:29:58:238 INFO  Algoritmo:95 - Difference: -0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:29:59:612 INFO  Algoritmo:95 - Difference: -0.020000000000436557 MN: 53450.0 CR: 5.0
+2018-05-25 11:30:00:991 INFO  Algoritmo:95 - Difference: -5.329999999999927 MN: 53450.0 CR: 5.0
+2018-05-25 11:30:02:369 INFO  Algoritmo:95 - Difference: 0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:06:296 INFO  Algoritmo:95 - Difference: 7.759999999999309 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:07:692 INFO  Algoritmo:95 - Difference: -7.730000000000473 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:09:073 INFO  Algoritmo:95 - Difference: 7.690000000000509 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:10:437 INFO  Algoritmo:95 - Difference: -7.690000000000509 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:11:802 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:13:179 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:14:541 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:15:918 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:17:570 INFO  Algoritmo:95 - Difference: 7.6200000000008 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:19:507 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:21:427 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:23:050 INFO  Algoritmo:95 - Difference: 4.949999999999818 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:24:676 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:26:047 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:27:695 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:29:604 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:31:253 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:33:151 INFO  Algoritmo:95 - Difference: 4.949999999999818 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:34:796 INFO  Algoritmo:95 - Difference: -0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:31:36:450 INFO  Algoritmo:95 - Difference: -4.130000000000109 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:08:145 INFO  Algoritmo:95 - Difference: 0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:09:516 INFO  Algoritmo:95 - Difference: -0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:10:878 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:12:246 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:13:619 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:14:980 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:16:354 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:17:720 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:19:090 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:20:447 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:21:819 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:23:174 INFO  Algoritmo:95 - Difference: -6.390000000000327 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:24:527 INFO  Algoritmo:95 - Difference: -0.009999999999308784 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:25:877 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:27:247 INFO  Algoritmo:95 - Difference: 0.009999999999308784 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:28:603 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:29:968 INFO  Algoritmo:95 - Difference: 6.710000000000036 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:31:337 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:32:699 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:32:34:072 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:05:001 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:06:367 INFO  Algoritmo:95 - Difference: 4.970000000000255 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:07:722 INFO  Algoritmo:95 - Difference: -0.019999999999527063 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:09:095 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:10:459 INFO  Algoritmo:95 - Difference: -5.25 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:11:826 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:13:220 INFO  Algoritmo:95 - Difference: -0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:14:580 INFO  Algoritmo:95 - Difference: 0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:15:935 INFO  Algoritmo:95 - Difference: 5.109999999999673 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:17:287 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:18:653 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:20:002 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:21:374 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:22:736 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:24:088 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:25:456 INFO  Algoritmo:95 - Difference: -0.020000000000436557 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:26:824 INFO  Algoritmo:95 - Difference: -5.099999999999454 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:28:201 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:29:563 INFO  Algoritmo:95 - Difference: 5.199999999999818 MN: 53450.0 CR: 5.0
+2018-05-25 11:33:30:912 INFO  Algoritmo:95 - Difference: -0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:07:161 INFO  Algoritmo:95 - Difference: -5.160000000000764 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:08:570 INFO  Algoritmo:95 - Difference: 0.8100000000004002 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:09:935 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:11:310 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:12:665 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:14:035 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:24:148 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:25:781 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:27:403 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:29:027 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:30:678 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:32:309 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:33:925 INFO  Algoritmo:95 - Difference: -2.2399999999997817 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:35:554 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:37:193 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:39:119 INFO  Algoritmo:95 - Difference: 2.2399999999997817 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:40:772 INFO  Algoritmo:95 - Difference: -3.4700000000002547 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:42:689 INFO  Algoritmo:95 - Difference: -0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:44:329 INFO  Algoritmo:95 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:34:59:100 INFO  Algoritmo:95 - Difference: 0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:35:00:473 INFO  Algoritmo:95 - Difference: 0.020000000000436557 MN: 53450.0 CR: 5.0
+2018-05-25 11:35:01:856 INFO  Algoritmo:95 - Difference: -0.020000000000436557 MN: 53450.0 CR: 5.0
+2018-05-25 11:35:03:222 INFO  Algoritmo:95 - Difference: 0.010000000000218279 MN: 49708.405 CR: 5.5
+2018-05-25 11:35:04:599 INFO  Algoritmo:95 - Difference: -0.010000000000218279 MN: 49708.405 CR: 5.5
+2018-05-25 11:35:05:960 INFO  Algoritmo:95 - Difference: 0.0 MN: 45966.81 CR: 6.0
+2018-05-25 11:35:07:329 INFO  Algoritmo:95 - Difference: 0.0 MN: 45966.81 CR: 6.0
+2018-05-25 11:35:08:688 INFO  Algoritmo:95 - Difference: 0.0 MN: 45966.81 CR: 6.0
+2018-05-25 11:35:10:058 INFO  Algoritmo:95 - Difference: 0.0 MN: 45966.81 CR: 6.0
+2018-05-25 11:35:11:443 INFO  Algoritmo:95 - Difference: 0.0 MN: 45966.81 CR: 6.0
+2018-05-25 11:35:12:849 INFO  Algoritmo:95 - Difference: 0.010000000000218279 MN: 45966.81 CR: 6.0
+2018-05-25 11:35:14:217 INFO  Algoritmo:95 - Difference: 0.0 MN: 45966.81 CR: 6.0
+2018-05-25 11:35:15:577 INFO  Algoritmo:95 - Difference: 0.0 MN: 45966.81 CR: 6.0
+2018-05-25 11:35:16:963 INFO  Algoritmo:95 - Difference: 0.0 MN: 45966.81 CR: 6.0
+2018-05-25 11:35:18:330 INFO  Algoritmo:95 - Difference: 0.0 MN: 45966.81 CR: 6.0
+2018-05-25 11:35:19:690 INFO  Algoritmo:95 - Difference: 0.0 MN: 45966.81 CR: 6.0
+2018-05-25 11:37:27:148 INFO  Algoritmo:97 - Difference: -2.0599999999994907 MN: 53450.0 CR: 5.0
+2018-05-25 11:37:32:659 INFO  Algoritmo:97 - Difference: 4.119999999999891 MN: 53450.0 CR: 5.0
+2018-05-25 11:37:38:154 INFO  Algoritmo:97 - Difference: -4.020000000000437 MN: 53450.0 CR: 5.0
+2018-05-25 11:37:43:642 INFO  Algoritmo:97 - Difference: 4.829999999999927 MN: 53450.0 CR: 5.0
+2018-05-25 11:37:49:148 INFO  Algoritmo:97 - Difference: -0.4899999999997817 MN: 53450.0 CR: 5.0
+2018-05-25 11:37:54:648 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:38:00:143 INFO  Algoritmo:97 - Difference: -0.09000000000014552 MN: 53450.0 CR: 5.0
+2018-05-25 11:38:05:640 INFO  Algoritmo:97 - Difference: -6.369999999999891 MN: 53450.0 CR: 5.0
+2018-05-25 11:38:11:159 INFO  Algoritmo:97 - Difference: 5.760000000000218 MN: 53450.0 CR: 5.0
+2018-05-25 11:38:16:670 INFO  Algoritmo:97 - Difference: -5.760000000000218 MN: 53450.0 CR: 5.0
+2018-05-25 11:38:22:155 INFO  Algoritmo:97 - Difference: 3.699999999999818 MN: 53450.0 CR: 5.0
+2018-05-25 11:38:27:689 INFO  Algoritmo:97 - Difference: -8.75 MN: 53450.0 CR: 5.0
+2018-05-25 11:38:33:195 INFO  Algoritmo:97 - Difference: 7.970000000000255 MN: 53450.0 CR: 5.0
+2018-05-25 11:38:38:677 INFO  Algoritmo:97 - Difference: -0.0999999999994543 MN: 53450.0 CR: 5.0
+2018-05-25 11:38:44:159 INFO  Algoritmo:97 - Difference: -7.700000000000728 MN: 53450.0 CR: 5.0
+2018-05-25 11:38:49:697 INFO  Algoritmo:97 - Difference: 7.440000000000509 MN: 53450.0 CR: 5.0
+2018-05-25 11:38:55:237 INFO  Algoritmo:97 - Difference: -6.5700000000006185 MN: 53450.0 CR: 5.0
+2018-05-25 11:39:00:720 INFO  Algoritmo:97 - Difference: 5.690000000000509 MN: 53450.0 CR: 5.0
+2018-05-25 11:39:06:205 INFO  Algoritmo:97 - Difference: -5.630000000000109 MN: 53450.0 CR: 5.0
+2018-05-25 11:39:11:703 INFO  Algoritmo:97 - Difference: 0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:42:25:683 ERROR Algoritmo:150 - Second i = 1
+2018-05-25 11:42:25:993 INFO  Algoritmo:97 - Difference: 4.789999999999964 MN: 53450.0 CR: 5.0
+2018-05-25 11:42:25:993 ERROR Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:42:31:339 ERROR Algoritmo:150 - Second i = 2
+2018-05-25 11:42:31:899 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:42:31:899 ERROR Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:42:37:368 ERROR Algoritmo:150 - Second i = 3
+2018-05-25 11:42:37:686 INFO  Algoritmo:97 - Difference: -0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:42:37:686 ERROR Algoritmo:156 - Recomendation: Buy on Low
+2018-05-25 11:42:42:874 ERROR Algoritmo:150 - Second i = 4
+2018-05-25 11:42:43:177 INFO  Algoritmo:97 - Difference: 4.800000000000182 MN: 53450.0 CR: 5.0
+2018-05-25 11:42:43:177 ERROR Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:42:48:370 ERROR Algoritmo:150 - Second i = 5
+2018-05-25 11:42:48:670 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:42:48:670 ERROR Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:42:53:860 ERROR Algoritmo:150 - Second i = 6
+2018-05-25 11:42:54:159 INFO  Algoritmo:97 - Difference: -4.8100000000004 MN: 53450.0 CR: 5.0
+2018-05-25 11:42:54:159 ERROR Algoritmo:156 - Recomendation: Buy on Low
+2018-05-25 11:42:59:349 ERROR Algoritmo:150 - Second i = 7
+2018-05-25 11:42:59:653 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:42:59:654 ERROR Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:43:04:849 ERROR Algoritmo:150 - Second i = 8
+2018-05-25 11:43:05:168 INFO  Algoritmo:97 - Difference: 4.800000000000182 MN: 53450.0 CR: 5.0
+2018-05-25 11:43:05:168 ERROR Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:43:10:355 ERROR Algoritmo:150 - Second i = 9
+2018-05-25 11:43:10:655 INFO  Algoritmo:97 - Difference: -4.789999999999964 MN: 53450.0 CR: 5.0
+2018-05-25 11:43:10:655 ERROR Algoritmo:156 - Recomendation: Buy on Low
+2018-05-25 11:43:15:833 ERROR Algoritmo:150 - Second i = 10
+2018-05-25 11:43:16:145 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:43:16:145 ERROR Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:43:21:336 ERROR Algoritmo:150 - Second i = 11
+2018-05-25 11:43:21:641 INFO  Algoritmo:97 - Difference: -0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:43:21:641 ERROR Algoritmo:156 - Recomendation: Buy on Low
+2018-05-25 11:43:26:830 ERROR Algoritmo:150 - Second i = 12
+2018-05-25 11:43:27:185 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:43:27:185 ERROR Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:43:32:374 ERROR Algoritmo:150 - Second i = 13
+2018-05-25 11:43:32:683 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:43:32:683 ERROR Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:43:37:870 ERROR Algoritmo:150 - Second i = 14
+2018-05-25 11:43:38:169 INFO  Algoritmo:97 - Difference: 4.789999999999964 MN: 53450.0 CR: 5.0
+2018-05-25 11:43:38:169 ERROR Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:43:43:349 ERROR Algoritmo:150 - Second i = 15
+2018-05-25 11:43:43:650 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:43:43:650 ERROR Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:43:48:846 ERROR Algoritmo:150 - Second i = 16
+2018-05-25 11:43:49:139 INFO  Algoritmo:97 - Difference: -4.779999999999745 MN: 53450.0 CR: 5.0
+2018-05-25 11:43:49:139 ERROR Algoritmo:156 - Recomendation: Buy on Low
+2018-05-25 11:43:54:320 ERROR Algoritmo:150 - Second i = 17
+2018-05-25 11:43:54:617 INFO  Algoritmo:97 - Difference: -2.480000000000473 MN: 53450.0 CR: 5.0
+2018-05-25 11:43:54:617 ERROR Algoritmo:156 - Recomendation: Buy on Low
+2018-05-25 11:44:00:069 ERROR Algoritmo:150 - Second i = 18
+2018-05-25 11:44:00:374 INFO  Algoritmo:97 - Difference: -0.009999999999308784 MN: 53450.0 CR: 5.0
+2018-05-25 11:44:00:374 ERROR Algoritmo:156 - Recomendation: Buy on Low
+2018-05-25 11:44:05:559 ERROR Algoritmo:150 - Second i = 19
+2018-05-25 11:44:05:877 INFO  Algoritmo:97 - Difference: -6.210000000000036 MN: 53450.0 CR: 5.0
+2018-05-25 11:44:05:878 ERROR Algoritmo:156 - Recomendation: Buy on Low
+2018-05-25 11:44:11:065 ERROR Algoritmo:150 - Second i = 20
+2018-05-25 11:44:11:362 INFO  Algoritmo:97 - Difference: 2.399999999999636 MN: 53450.0 CR: 5.0
+2018-05-25 11:44:11:363 ERROR Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:45:38:146 INFO  Algoritmo:150 - Second i = 1
+2018-05-25 11:45:38:337 INFO  Algoritmo:97 - Difference: -10.100000000000364 MN: 53450.0 CR: 5.0
+2018-05-25 11:45:38:337 INFO  Algoritmo:156 - Recomendation: Buy on Low
+2018-05-25 11:45:41:514 INFO  Algoritmo:150 - Second i = 2
+2018-05-25 11:45:41:694 INFO  Algoritmo:97 - Difference: 10.100000000000364 MN: 53450.0 CR: 5.0
+2018-05-25 11:45:41:694 INFO  Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:45:44:881 INFO  Algoritmo:150 - Second i = 3
+2018-05-25 11:45:45:336 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:45:45:336 INFO  Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:45:48:516 INFO  Algoritmo:150 - Second i = 4
+2018-05-25 11:45:48:705 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:45:48:705 INFO  Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:45:51:887 INFO  Algoritmo:150 - Second i = 5
+2018-05-25 11:45:52:068 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:45:52:068 INFO  Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:45:55:248 INFO  Algoritmo:150 - Second i = 6
+2018-05-25 11:45:55:429 INFO  Algoritmo:97 - Difference: -5.350000000000364 MN: 53450.0 CR: 5.0
+2018-05-25 11:45:55:430 INFO  Algoritmo:156 - Recomendation: Buy on Low
+2018-05-25 11:45:58:615 INFO  Algoritmo:150 - Second i = 7
+2018-05-25 11:45:59:076 INFO  Algoritmo:97 - Difference: 3.1200000000008004 MN: 53450.0 CR: 5.0
+2018-05-25 11:45:59:076 INFO  Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:46:02:264 INFO  Algoritmo:150 - Second i = 8
+2018-05-25 11:46:02:464 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:46:02:464 INFO  Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:46:05:654 INFO  Algoritmo:150 - Second i = 9
+2018-05-25 11:46:05:847 INFO  Algoritmo:97 - Difference: -3.4500000000007276 MN: 53450.0 CR: 5.0
+2018-05-25 11:46:05:848 INFO  Algoritmo:156 - Recomendation: Buy on Low
+2018-05-25 11:46:09:024 INFO  Algoritmo:150 - Second i = 10
+2018-05-25 11:46:09:199 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:46:09:199 INFO  Algoritmo:156 - Recomendation: Sell on High
+2018-05-25 11:46:12:380 INFO  Algoritmo:150 - Second i = 11
+2018-05-25 11:46:12:561 INFO  Algoritmo:97 - Difference: -1.699999999999818 MN: 53450.0 CR: 5.0
+2018-05-25 11:46:12:562 INFO  Algoritmo:156 - Recomendation: Buy on Low
+2018-05-25 11:46:15:749 INFO  Algoritmo:150 - Second i = 12
+2018-05-25 11:46:15:931 INFO  Algoritmo:97 - Difference: -5.789999999999964 MN: 53450.0 CR: 5.0
+2018-05-25 11:46:15:931 INFO  Algoritmo:156 - Recomendation: Buy on Low
+2018-05-25 11:46:22:463 INFO  Algoritmo:145 - Analisis initialized
+:
+2018-05-25 11:46:26:078 INFO  Algoritmo:151 - Second i = 1
+2018-05-25 11:46:26:264 INFO  Algoritmo:97 - Difference: 2.4799999999995634 MN: 53450.0 CR: 5.0
+2018-05-25 11:46:26:264 INFO  Algoritmo:157 - Recomendation: Sell on High
+2018-05-25 11:46:37:380 INFO  Algoritmo:145 - Analisis initialized:
+2018-05-25 11:47:03:553 INFO  Algoritmo:145 - Analisis initialized:
+2018-05-25 11:47:07:193 INFO  Algoritmo:151 - Iteration #1
+2018-05-25 11:47:07:376 INFO  Algoritmo:97 - Difference: -0.020000000000436557 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:07:376 INFO  Algoritmo:157 - Recomendation: Buy on Low
+2018-05-25 11:47:10:560 INFO  Algoritmo:151 - Iteration #2
+2018-05-25 11:47:10:744 INFO  Algoritmo:97 - Difference: -9.61999999999989 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:10:745 INFO  Algoritmo:157 - Recomendation: Buy on Low
+2018-05-25 11:47:13:933 INFO  Algoritmo:151 - Iteration #3
+2018-05-25 11:47:14:120 INFO  Algoritmo:97 - Difference: 9.010000000000218 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:14:120 INFO  Algoritmo:157 - Recomendation: Sell on High
+2018-05-25 11:47:17:312 INFO  Algoritmo:151 - Iteration #4
+2018-05-25 11:47:17:494 INFO  Algoritmo:97 - Difference: -8.989999999999782 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:17:494 INFO  Algoritmo:157 - Recomendation: Buy on Low
+2018-05-25 11:47:20:685 INFO  Algoritmo:151 - Iteration #5
+2018-05-25 11:47:20:867 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:20:867 INFO  Algoritmo:157 - Recomendation: Sell on High
+2018-05-25 11:47:24:048 INFO  Algoritmo:151 - Iteration #6
+2018-05-25 11:47:24:227 INFO  Algoritmo:97 - Difference: 8.75 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:24:228 INFO  Algoritmo:157 - Recomendation: Sell on High
+2018-05-25 11:47:27:420 INFO  Algoritmo:151 - Iteration #7
+2018-05-25 11:47:27:607 INFO  Algoritmo:97 - Difference: -8.760000000000218 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:27:608 INFO  Algoritmo:157 - Recomendation: Buy on Low
+2018-05-25 11:47:30:792 INFO  Algoritmo:151 - Iteration #8
+2018-05-25 11:47:30:973 INFO  Algoritmo:97 - Difference: 0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:30:974 INFO  Algoritmo:157 - Recomendation: Sell on High
+2018-05-25 11:47:34:161 INFO  Algoritmo:151 - Iteration #9
+2018-05-25 11:47:34:348 INFO  Algoritmo:97 - Difference: -8.390000000000327 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:34:348 INFO  Algoritmo:157 - Recomendation: Buy on Low
+2018-05-25 11:47:37:534 INFO  Algoritmo:151 - Iteration #10
+2018-05-25 11:47:37:723 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:37:724 INFO  Algoritmo:157 - Recomendation: Sell on High
+2018-05-25 11:47:40:914 INFO  Algoritmo:151 - Iteration #11
+2018-05-25 11:47:41:104 INFO  Algoritmo:97 - Difference: -5.779999999999745 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:41:104 INFO  Algoritmo:157 - Recomendation: Buy on Low
+2018-05-25 11:47:44:287 INFO  Algoritmo:151 - Iteration #12
+2018-05-25 11:47:44:462 INFO  Algoritmo:97 - Difference: -0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:44:462 INFO  Algoritmo:157 - Recomendation: Buy on Low
+2018-05-25 11:47:47:653 INFO  Algoritmo:151 - Iteration #13
+2018-05-25 11:47:47:846 INFO  Algoritmo:97 - Difference: 0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:47:846 INFO  Algoritmo:157 - Recomendation: Sell on High
+2018-05-25 11:47:51:036 INFO  Algoritmo:151 - Iteration #14
+2018-05-25 11:47:51:214 INFO  Algoritmo:97 - Difference: 0.019999999999527063 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:51:214 INFO  Algoritmo:157 - Recomendation: Sell on High
+2018-05-25 11:47:54:660 INFO  Algoritmo:151 - Iteration #15
+2018-05-25 11:47:55:119 INFO  Algoritmo:97 - Difference: 5.869999999999891 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:55:119 INFO  Algoritmo:157 - Recomendation: Sell on High
+2018-05-25 11:47:58:305 INFO  Algoritmo:151 - Iteration #16
+2018-05-25 11:47:58:750 INFO  Algoritmo:97 - Difference: -5.849999999999454 MN: 53450.0 CR: 5.0
+2018-05-25 11:47:58:751 INFO  Algoritmo:157 - Recomendation: Buy on Low
+2018-05-25 11:48:01:936 INFO  Algoritmo:151 - Iteration #17
+2018-05-25 11:48:02:117 INFO  Algoritmo:97 - Difference: 0.0 MN: 53450.0 CR: 5.0
+2018-05-25 11:48:02:117 INFO  Algoritmo:157 - Recomendation: Sell on High
+2018-05-25 11:48:05:307 INFO  Algoritmo:151 - Iteration #18
+2018-05-25 11:48:05:768 INFO  Algoritmo:97 - Difference: 0.02999999999974534 MN: 53450.0 CR: 5.0
+2018-05-25 11:48:05:768 INFO  Algoritmo:157 - Recomendation: Sell on High
+2018-05-25 11:48:09:212 INFO  Algoritmo:151 - Iteration #19
+2018-05-25 11:48:09:659 INFO  Algoritmo:97 - Difference: -0.010000000000218279 MN: 53450.0 CR: 5.0
+2018-05-25 11:48:09:659 INFO  Algoritmo:157 - Recomendation: Buy on Low
+2018-05-25 11:48:13:125 INFO  Algoritmo:151 - Iteration #20
+2018-05-25 11:48:13:303 INFO  Algoritmo:97 - Difference: -0.06999999999970896 MN: 53450.0 CR: 5.0
+2018-05-25 11:48:13:303 INFO  Algoritmo:157 - Recomendation: Buy on Low

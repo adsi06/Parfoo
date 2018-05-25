@@ -1,7 +1,6 @@
 package com.Parfoo;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -23,6 +22,7 @@ import org.apache.log4j.Logger;
  */
 public class Algoritmo {
     private final static Logger LOGGER = Logger.getLogger(Algoritmo.class);
+    private final String SYMBOL;
     private final double SELL_ON_HIGH_PERCENTAGE;
     private final double BUY_ON_LOW_PERCENTAGE;
     private final double CONTROLLED_BUY_PERCENTAGE;
@@ -37,8 +37,9 @@ public class Algoritmo {
      * @param buyLowPercentage Porcentaje de disminución de precio para venta
      * @param controlledBuyPercentage Porcentaje de utilización de dinero para venta controlada
      */
-    public Algoritmo(double initMoney, double initCrypto, double sellHighPercentage, double buyLowPercentage, double controlledBuyPercentage){
+    public Algoritmo(String symbol, double initMoney, double initCrypto, double sellHighPercentage, double buyLowPercentage, double controlledBuyPercentage){
         this.pseudoCalls = new ArrayList<>();
+        this.SYMBOL = symbol;
         this.currentMoney = initMoney;
         this.currentCrypto = initCrypto;
         this.SELL_ON_HIGH_PERCENTAGE = sellHighPercentage;
@@ -52,7 +53,8 @@ public class Algoritmo {
     * Son simulaciones de cambios en el precio a lo largo del tiempo.
     * Para simular peticiones al WebService
     */
-    private void fill(){
+    @SuppressWarnings("unused")
+	private void fill(){
         for (int i = 0; i < 100; i++) {
             this.pseudoCalls.add(Math.random() * 2500);
         }
@@ -62,7 +64,7 @@ public class Algoritmo {
      * @param symbol Simbolo de la cryptomoneda a analizar
      * @param amoutSellPercentage Porcentaje de cryptos a vender en una transacción
      * @param cryptoBuyCuantity Cantidad de cryptos a comprar en una transacción
-     * @param iterations Número de segundos a correr el algoritmo
+     * @param prevPrice Precio anterior al correr el algoritmo
      * 
      * Algoritmo:
      * 
@@ -86,16 +88,18 @@ public class Algoritmo {
      * 
      * Fin del algoritmo cuando el usuario así lo decida
      */
-    public Recomendacion buySellAlgorithm(String symbol, double amoutSellPercentage, double cryptoBuyCuantity, double prevPrice){
+    public Recomendacion buySellAlgorithm(double amoutSellPercentage, double cryptoBuyCuantity, double prevPrice){
     		Recomendacion recomendation = null;;
     		double difference, percentage, sufficientMoney, currentPrice;
-        currentPrice = Cryptos.getPrecio(symbol);
+        currentPrice = Cryptos.getPrecio(this.SYMBOL);
         difference = currentPrice - prevPrice;
-
+        
+        LOGGER.info("Difference: " + difference + " MN: " + this.currentMoney + " CR: " + this.currentCrypto);
+        
         if(difference >= 0){//Venta en caso de alta de precio
             percentage = difference / prevPrice;
             
-            if(percentage < this.SELL_ON_HIGH_PERCENTAGE){
+            if(percentage < this.SELL_ON_HIGH_PERCENTAGE) {
                 recomendation = new Recomendacion(1, 0); //Recomendation: Sell on High
             } else {
                 if(this.currentCrypto > 0){//Tengo cryptos para vender
@@ -129,20 +133,29 @@ public class Algoritmo {
                     }
                 }
             }
-        }
+        	}
         
         return recomendation;
     }
     
-    public void runAnalisis(String symbol, int iterations) {
+    public void runAnalisis(int iterations, double amoutSellPercentage, double cryptoBuyCuantity) {
     		int i = 0;
+    		double prevPrice;
+    		Recomendacion output;
+    		LOGGER.info("Analisis initialized:");
+    		
     		while(i++ < iterations) {
     			try {
-    				TimeUnit.SECONDS.sleep(1); //Se espera 1 segundo entre cada iteración del algoritmo
+    				prevPrice = Cryptos.getPrecio(this.SYMBOL);
+    				TimeUnit.SECONDS.sleep(3); //Se esperan 3 segundo entre cada iteración del algoritmo
+    				LOGGER.info("Iteration #" + i);
+    				output = buySellAlgorithm(amoutSellPercentage, cryptoBuyCuantity, prevPrice);
     				
-    	            System.out.println("Second i = " + i);
-    	            //System.out.println("Price: " + currentPrice + " MN: " + this.currentMoney + " CR: " + this.currentCrypto + "\n");
-    	            //LOGGER.info("Price: " + currentPrice + " MN: " + this.currentMoney + " CR: " + this.currentCrypto);
+    				if(output == null) {
+    					LOGGER.info("Recomendation: Do nothing");
+    				} else {
+    					LOGGER.info(output.toString());
+    				}
     			} catch (InterruptedException e) {
     				LOGGER.error(e.getMessage().toString());
     			}
@@ -150,7 +163,7 @@ public class Algoritmo {
     }
     
     public static void main(String[] args) {
-        Algoritmo a = new Algoritmo(53450, 5, 1, 0.6, .15);
-        a.buySellAlgorithm("BTCUSDT", .15, .5, 20);
+        Algoritmo a = new Algoritmo("BTCUSDT", 53450, 5, 0.01, 0.01, .15);
+        a.runAnalisis(20, .15, .5);
     }
 }

@@ -34,10 +34,10 @@ public class Recomendacion {
 			if(this.action == 0)
 				return "Recomendation: Buy on Low";
 			else
-				return "Recomendation: Sell on High";
+				return "Action: Buy on Low";
 		} else{
 			if(this.action == 0)
-				return "Action: Buy on Low";
+				return "Recomendation: Sell on High";
 			else
 				return "Action: Sell on High";
 		}
