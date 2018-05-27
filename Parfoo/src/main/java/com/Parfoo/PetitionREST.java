@@ -48,13 +48,14 @@ public class PetitionREST {
 		try {
 			URL url = new URL(ip);
 			LOG.info("Inicializando la conexión...");
+			// Conexión básica de HTTP
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("GET");
 			LOG.info("Configurando las propiedades del requerimiento...");
 			connection.setRequestProperty("User-Agent", this.USER_AGENT);
 			LOG.info("Obteniendo el código de respuesta...");
 			int responseCode = connection.getResponseCode();
-			response = responseCode == 200;
+			response = responseCode == 200; // El código de respuesta de 'OK'
 			LOG.info("El código de respuesta fue: " + responseCode);
 			BufferedReader input = new BufferedReader(new InputStreamReader(
 					connection.getInputStream()));
@@ -63,9 +64,9 @@ public class PetitionREST {
 			LOG.info("Generando el HTML de respuesta...");
 			while (line != null) {
 				buffer.append(line);
-				line = input.readLine();
+				line = input.readLine(); // Cada nueva línea del HTMl
 			}
-			input.close();
+			input.close(); // Cerramos el buffer de respuesta
 			LOG.info("Fin del HTML de respuesta");
 		} catch (Exception e) {
 			response = false;
@@ -90,6 +91,7 @@ public class PetitionREST {
 		try {
 			URL url = new URL(ip);
 			LOG.info("Inicializando la conexión...");
+			// Conexión básica de HTTPS
 			HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 			connection.setRequestMethod("POST");
 			LOG.info("Configurando las propiedades del requerimiento...");
@@ -97,12 +99,12 @@ public class PetitionREST {
 			connection.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
 			connection.setDoOutput(true);
 			DataOutputStream writable = new DataOutputStream(connection.getOutputStream());
-			writable.writeBytes(parameters);
+			writable.writeBytes(parameters);  // Abrimos la configuración de parametros
 			writable.flush();
-			writable.close();
+			writable.close(); // Cerramos la configuración de parametros
 			LOG.info("Obteniendo el código de respuesta...");
 			int responseCode = connection.getResponseCode();
-			response = responseCode == 200;
+			response = responseCode == 200; // El código de respuesta de 'OK'
 			BufferedReader input = new BufferedReader(new InputStreamReader(
 					connection.getInputStream()));
 			String line = input.readLine();
@@ -110,9 +112,9 @@ public class PetitionREST {
 			LOG.info("Generando el HTML de respuesta...");
 			while (!line.isEmpty()) {
 				buffer.append(line);
-				line = input.readLine();
+				line = input.readLine(); // Cada nueva línea del HTMl
 			}
-			input.close();
+			input.close(); // Cerramos el buffer de respuesta
 			LOG.info("Fin del HTML de respuesta");
 		} catch (Exception e) {
 			response = false;
