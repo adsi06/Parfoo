@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Información</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" id="header">
+        <div class="col-md-3">
+          <a href="/">
+            <img src="images/parfoo.png" alt="Parfoo: Make DEV happen" width="80%" height="80%">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <h1>Tablero de toma de decisiones</h1>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row" id="decision">
+        <div class="col-md-4">
+          <div class="container x_panel">
+            <h3>Comprar: </h3>
+            <p></p>
+            <br>
+            <span class="fa fa-bullhorn"></span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container x_panel">
+            <h3>Ganancia:</h3>
+            <p></p>
+            <br>
+            <span class="fa fa-line-chart"></span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container x_panel">
+            <h3>Plazo:</h3>
+            <p></p>
+            <br>
+            <span class="fa fa-hourglass"></span>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row" id="body">
+        <div class="col-md-4">
+          <div class="container x_panel">
+            <h3>BitCoin</h3>
+            <table class="table table-sm table-bordered table-hover">
+                <thead class="thead-light">
+                  <th>Descripción</th>
+                  <th>Cantidad</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>MXN</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Max</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Min</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Variación</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="container x_panel">
+                <canvas id="recordChart" width="200" height="300"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="container x_panel">
+                <canvas id="monthChart" width="200" height="300"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row" id="button">
+        <div class="col-md-2 offset-md-10">
+          <button type="button" class="btn btn-outline-success">Cargar datos</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="dependencies/sails.io.js"></script>
+    <script type="text/javascript">
+    var points = [];
+    var labels = [];
+    var record = document.getElementById("recordChart").getContext('2d');
+    var month = document.getElementById("monthChart").getContext('2d');
+    var options = {
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    };
+    var data = {
+        labels: labels,
+        datasets: [{
+            label: 'Valor de BitCoin',
+            data: points,
+            borderWidth: 3,
+            fill: true,
+            borderColor: "rgba(212,209,95,1)",
+            backgroundColor: "rgba(212,209,95,0.2)"
+        }]
+    };
+    var recordChart = new Chart(record, {
+        type: 'line',
+        data: data,
+        options: options
+    });
+    var monthChart = new Chart(month, {
+        type: 'line',
+        data: data,
+        options: options
+    });
+    io.socket.on('points', function(point) {
+      console.log("ON");
+      points.push(point.data.point);
+      labels.push(point.data.time);
+      window.recordChart.update();
+    });
+    io.socket.get('/points', function(pointsChart, response) {
+      console.log("GET");
+      for (point of pointsChart) {
+        points.push(point.point);
+        labels.push(point.time);
+        window.recordChart.update();
+      }
+    });
+    </script>
+  </body>
+</html>
