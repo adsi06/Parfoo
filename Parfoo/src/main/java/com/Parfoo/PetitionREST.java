@@ -19,13 +19,18 @@ public class PetitionREST {
 	/**
 	 * Para obtener un manifiesto sobre lo que la clase está haciendo
 	 */
-	private final static Logger LOGGER = Logger.getLogger(Algoritmo.class);
+	private final static Logger LOG = Logger.getLogger(PetitionREST.class);
 	/**
 	 * Contiene el HTML de respuesta de la página a la que se le hizo
 	 * una petición
 	 */
 	private StringBuffer buffer;
 	
+	/**
+	 * Getter de la respuesta del HTML
+	 * @return La cadena con el HTML de respuesta de la página con la que
+	 * se hizo la petición
+	 */
 	public String getBuffer() {
 		return buffer.toString();
 	}
@@ -38,24 +43,33 @@ public class PetitionREST {
 	 * @return TRUE - El proceso GET fue satisfactorio. FALSE - EOC
 	 */
 	public boolean sendGET(String ip) {
+		LOG.info("Checando nueva petición GET");
 		boolean response = false;
 		try {
 			URL url = new URL(ip);
+			LOG.info("Inicializando la conexión...");
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("GET");
+			LOG.info("Configurando las propiedades del requerimiento...");
 			connection.setRequestProperty("User-Agent", this.USER_AGENT);
-			response = connection.getResponseCode() == 200;
+			LOG.info("Obteniendo el código de respuesta...");
+			int responseCode = connection.getResponseCode();
+			response = responseCode == 200;
+			LOG.info("El código de respuesta fue: " + responseCode);
 			BufferedReader input = new BufferedReader(new InputStreamReader(
 					connection.getInputStream()));
 			String line = input.readLine();
 			buffer = new StringBuffer();
+			LOG.info("Generando el HTML de respuesta...");
 			while (line != null) {
 				buffer.append(line);
 				line = input.readLine();
 			}
 			input.close();
+			LOG.info("Fin del HTML de respuesta");
 		} catch (Exception e) {
 			response = false;
+			LOG.info("Error en la petición");
 			e.printStackTrace();
 		}
 		return response;
@@ -71,11 +85,14 @@ public class PetitionREST {
 	 * @return TRUE - El proceso GET fue satisfactorio. FALSE - EOC
 	 */
 	public boolean sendPOST(String ip, String parameters) {
+		LOG.info("Checando nueva petición POST");
 		boolean response = false;
 		try {
 			URL url = new URL(ip);
+			LOG.info("Inicializando la conexión...");
 			HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 			connection.setRequestMethod("POST");
+			LOG.info("Configurando las propiedades del requerimiento...");
 			connection.setRequestProperty("User-Agent", this.USER_AGENT);
 			connection.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
 			connection.setDoOutput(true);
@@ -83,39 +100,25 @@ public class PetitionREST {
 			writable.writeBytes(parameters);
 			writable.flush();
 			writable.close();
-			response = connection.getResponseCode() == 200;
+			LOG.info("Obteniendo el código de respuesta...");
+			int responseCode = connection.getResponseCode();
+			response = responseCode == 200;
 			BufferedReader input = new BufferedReader(new InputStreamReader(
 					connection.getInputStream()));
 			String line = input.readLine();
 			buffer = new StringBuffer();
+			LOG.info("Generando el HTML de respuesta...");
 			while (!line.isEmpty()) {
 				buffer.append(line);
 				line = input.readLine();
 			}
 			input.close();
+			LOG.info("Fin del HTML de respuesta");
 		} catch (Exception e) {
 			response = false;
+			LOG.info("Error en la petición");
 			e.printStackTrace();
 		}
 		return response;
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		PetitionREST p = new PetitionREST();
-		if (p.sendGET("http://www.google.com/search?q=tesla")) {
-			System.out.println("Petición correcta");
-		} else {
-			System.out.println("Error en la petición");
-		}
-		
-		if (p.sendPOST("https://chart.googleapis.com/chart",
-				"cht=lc&chtt=MyChart&chs=600x200&chxt=x,y&chd=t:40,20,50,20,100")) {
-			System.out.println("Petición correcta");
-		} else {
-			System.out.println("Error en la petición");
-		}
-		
-	}
-
 }
