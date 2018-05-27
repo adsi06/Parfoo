@@ -1,5 +1,11 @@
 package com.Parfoo;
 
+/**
+ * En la clase JSonReader se lee el Json que regresa el API de binance
+ * Se le asignan los valores al objeto de Criptomoneda para que pueda ser utilizado
+ * y sacar información
+ */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,6 +22,14 @@ import org.json.JSONObject;
 public class JsonReader {
 	private final static Logger LOG = Logger.getLogger(JsonReader.class);
 	
+	/**
+	 * Se leen los datos de un json dado un url
+	 * Se regresa un String con la información del Json
+	 * @param url
+	 * @return
+	 * @throws IOException
+	 * @throws JSONException
+	 */
 	public JSONObject readJsonFromUrl(String url) throws IOException, JSONException {
 		InputStream is = new URL(url).openStream();
 		try {
@@ -37,6 +51,12 @@ public class JsonReader {
 		return cad;
 	}
   
+	/**
+	 * Se le asignan los datos de ticker al objeto de Criptomoneda
+	 * Se regresa un objeto de tipo criptomoneda
+	 * @param data
+	 * @return
+	 */
 	public Criptomoneda setCriptoDataTicker(JSONObject data) {
 		Criptomoneda cripto = new Criptomoneda();
 		
@@ -53,6 +73,12 @@ public class JsonReader {
 		return cripto;
 	}
 	
+	/**
+	 * Se le asigna el dato de precio al objeto Criptomoneda
+	 * Se regresa un objeto de tipo criptomoneda
+	 * @param data
+	 * @return
+	 */
 	public Criptomoneda setPrice(JSONObject data) {
 		Criptomoneda cripto = new Criptomoneda();
 		try {
