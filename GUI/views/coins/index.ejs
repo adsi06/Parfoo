@@ -140,13 +140,13 @@
         data: data,
         options: options
     });
-    io.socket.on('points', function(point) {
+    io.socket.on('data', function(point) {
       console.log("ON");
       points.push(point.data.point);
       labels.push(point.data.time);
       window.recordChart.update();
     });
-    io.socket.get('/points', function(pointsChart, response) {
+    io.socket.get('/data', function(pointsChart, response) {
       console.log("GET");
       for (point of pointsChart) {
         points.push(point.point);
