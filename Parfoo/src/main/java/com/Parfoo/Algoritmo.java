@@ -48,7 +48,7 @@ public class Algoritmo {
         //fill(); //Para pruebas
     }
     
-    /*
+    /**
     * Método que añade a un ArrayList numeros al azar multiplicados por una constante.
     * Son simulaciones de cambios en el precio a lo largo del tiempo.
     * Para simular peticiones al WebService
