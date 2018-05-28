@@ -28,7 +28,7 @@
         <div class="col-md-4">
           <div class="container x_panel">
             <h3>Comprar: </h3>
-            <p></p>
+            <p id = "buy" style = "font-size:x-large;"></p>
             <br>
             <span class="fa fa-bullhorn"></span>
           </div>
@@ -36,7 +36,7 @@
         <div class="col-md-4">
           <div class="container x_panel">
             <h3>Ganancia:</h3>
-            <p></p>
+            <p id = "percent" style = "font-size:x-large;"></p>
             <br>
             <span class="fa fa-line-chart"></span>
           </div>
@@ -44,7 +44,7 @@
         <div class="col-md-4">
           <div class="container x_panel">
             <h3>Plazo:</h3>
-            <p></p>
+            <p id = "time" style = "font-size:x-large;">Al día</p>
             <br>
             <span class="fa fa-hourglass"></span>
           </div>
@@ -62,20 +62,16 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>MXN</td>
-                    <td></td>
+                    <td>USD</td>
+                    <td id = "money"></td>
                   </tr>
                   <tr>
                     <td>Max</td>
-                    <td></td>
+                    <td id = "maxUSD"></td>
                   </tr>
                   <tr>
                     <td>Min</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Variación</td>
-                    <td></td>
+                    <td id = "minUSD"></td>
                   </tr>
                 </tbody>
               </table>
@@ -90,36 +86,33 @@
             </div>
             <div class="col-md-6">
               <div class="container x_panel">
-                <canvas id="monthChart" width="200" height="300"></canvas>
+                <canvas id="percentChart" width="200" height="300"></canvas>
               </div>
             </div>
           </div>
         </div>
       </div>
       <br>
-      <div class="row" id="button">
-        <div class="col-md-2 offset-md-10">
-          <button type="button" class="btn btn-outline-success">Cargar datos</button>
-        </div>
-      </div>
     </div>
     <script type="text/javascript" src="dependencies/sails.io.js"></script>
     <script type="text/javascript">
     var points = [];
+    var percents = [];
     var labels = [];
+    var maxElements = 30;
     var record = document.getElementById("recordChart").getContext('2d');
-    var month = document.getElementById("monthChart").getContext('2d');
+    var percent = document.getElementById("percentChart").getContext('2d');
     var options = {
         maintainAspectRatio: false,
         scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero:true
+                    beginAtZero:false
                 }
             }]
         }
     };
-    var data = {
+    var dataRecord = {
         labels: labels,
         datasets: [{
             label: 'Valor de BitCoin',
@@ -130,28 +123,109 @@
             backgroundColor: "rgba(212,209,95,0.2)"
         }]
     };
+    var dataPercent = {
+        labels: labels,
+        datasets: [{
+            label: 'Variación de BitCoin (%)',
+            data: percents,
+            borderWidth: 3,
+            fill: true,
+            borderColor: "rgba(212,209,95,1)",
+            backgroundColor: "rgba(212,209,95,0.2)"
+        }]
+    };
     var recordChart = new Chart(record, {
         type: 'line',
-        data: data,
+        data: dataRecord,
         options: options
     });
-    var monthChart = new Chart(month, {
+    var percentChart = new Chart(percent, {
         type: 'line',
-        data: data,
+        data: dataPercent,
         options: options
     });
-    io.socket.on('data', function(point) {
-      console.log("ON");
-      points.push(point.data.point);
-      labels.push(point.data.time);
+    io.socket.on('data', function(information) {
+      if (labels.length > maxElements) {
+        for (var i = 0; i < labels.length-1; i++) {
+          labels[i] = labels[i+1];
+          points[i] = points[i+1];
+          percents[i] = percents[i+1];
+        }
+        labels.pop();
+        points.pop();
+        percents.pop();
+      }
+      var buy = document.getElementById('buy');
+      buy.innerHTML = information.data.buy;
+      var percent = document.getElementById('percent');
+      percent.innerHTML = information.data.priceChangePercent;
+      var money = document.getElementById('money');
+      money.innerHTML = information.data.openPrice;
+      var min = document.getElementById('minUSD');
+      min.innerHTML = information.data.lowPrice;
+      var max = document.getElementById('maxUSD');
+      max.innerHTML = information.data.highPrice;
+      points.push(parseFloat(information.data.openPrice));
+      percents.push(parseFloat(information.data.priceChangePercent));
+      var date = new Date();
+      var hh = date.getUTCHours();
+      var mm = date.getUTCMinutes();
+      var ss = date.getSeconds();
+      if (hh < 10) {
+        hh = "0"+hh;
+      }
+      if (mm < 10) {
+        mm = "0"+mm;
+      }
+      if (ss < 10) {
+        ss = "0"+ss;
+      }
+      var t = hh+":"+mm+":"+ss;
+      labels.push(t);
       window.recordChart.update();
+      window.percentChart.update();
     });
-    io.socket.get('/data', function(pointsChart, response) {
-      console.log("GET");
-      for (point of pointsChart) {
-        points.push(point.point);
-        labels.push(point.time);
+    io.socket.get('/data', function(information) {
+      for (data of information) {
+        if (labels.length > maxElements) {
+          for (var i = 0; i < labels.length-1; i++) {
+            labels[i] = labels[i+1];
+            points[i] = points[i+1];
+            percents[i] = percents[i+1];
+          }
+          labels.pop();
+          points.pop();
+          percents.pop();
+        }
+        var buy = document.getElementById('buy');
+        buy.innerHTML = data.buy;
+        var percent = document.getElementById('percent');
+        percent.innerHTML = data.priceChangePercent;
+        var money = document.getElementById('money');
+        money.innerHTML = data.openPrice;
+        var min = document.getElementById('minUSD');
+        min.innerHTML = data.lowPrice;
+        var max = document.getElementById('maxUSD');
+        max.innerHTML = data.highPrice;
+        points.push(parseFloat(data.openPrice));
+        percents.push(parseFloat(data.priceChangePercent));
+        var date = new Date();
+        var hh = date.getUTCHours();
+        var mm = date.getUTCMinutes();
+        var ss = date.getSeconds();
+        if (hh < 10) {
+          hh = "0"+hh;
+        }
+        if (mm < 10) {
+          mm = "0"+mm;
+        }
+        if (ss < 10) {
+          ss = "0"+ss;
+        }
+        var t = hh+":"+mm+":"+ss;
+        labels.push(t);
         window.recordChart.update();
+        window.percentChart.update();
       }
     });
     </script>

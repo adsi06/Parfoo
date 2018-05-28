@@ -44,6 +44,8 @@ public class SendData {
 	
 	public static void main(String[] args) {
 		SendData data = new SendData("http://localhost:1337/data");
-		data.sendPost("BTCUSDT");
+		for (int i = 0; i < 200; i++) {
+			data.sendPost("BTCUSDT");	
+		}
 	}
 }
