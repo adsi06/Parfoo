@@ -1,5 +1,11 @@
 package com.Parfoo;
 
+/**
+ * En la clase Criptomoneda se crea un objeto que contiene la información
+ * a recopilar de las criptomonedas
+ * 
+ */
+
 public class Criptomoneda {
 	private String symbol;
 	private int count;

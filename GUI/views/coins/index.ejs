@@ -18,10 +18,12 @@
           </a>
         </div>
         <div class="col-md-9">
-          <h1>Toma de decisiones</h1>
+          <h1>Tablero de toma de decisiones</h1>
         </div>
       </div>
+
       <br>
+
       <div class="row" id="decision">
         <div class="col-md-4">
           <div class="container x_panel">
@@ -138,13 +140,13 @@
         data: data,
         options: options
     });
-    io.socket.on('points', function(point) {
+    io.socket.on('data', function(point) {
       console.log("ON");
       points.push(point.data.point);
       labels.push(point.data.time);
       window.recordChart.update();
     });
-    io.socket.get('/points', function(pointsChart, response) {
+    io.socket.get('/data', function(pointsChart, response) {
       console.log("GET");
       for (point of pointsChart) {
         points.push(point.point);

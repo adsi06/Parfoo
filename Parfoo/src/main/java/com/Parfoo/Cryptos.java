@@ -1,5 +1,10 @@
 package com.Parfoo;
 
+/**
+ * En la clase Cryptos se piden los datos al API de binance para las distintas
+ * criptomonedas y que regrese la información para que se pueda utilizar
+ */
+
 import java.io.IOException;
 
 import org.apache.log4j.Logger;
@@ -13,7 +18,15 @@ public class Cryptos
 	private final static Logger LOG = Logger.getLogger(JsonReader.class);
 	public Criptomoneda cryp = new Criptomoneda();
 	
-	public static double getPrecio(String symbol)  {
+	/**
+	 * Se pide el precio de la criptomoneda
+	 * Se regresa en un double
+	 * @param symbol
+	 * @return
+	 */
+	
+	public static double precio(String symbol)  {
+
 		double ret=0;
 		JsonReader jr = new JsonReader();
   		JSONObject json;
@@ -31,6 +44,12 @@ public class Cryptos
   		return ret; 
 	}
 	
+	/**
+	 * Se piden los datos más importantes de la criptomoneda
+	 * Se regresan en un array
+	 * @param symbol
+	 * @return
+	 */
 	public static double[] ticker(String symbol){
 		double[] tick=new double[5];
 		JsonReader jr = new JsonReader();
