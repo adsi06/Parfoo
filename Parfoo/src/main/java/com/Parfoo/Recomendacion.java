@@ -32,14 +32,14 @@ public class Recomendacion {
 	public String toString() {
 		if(this.type == 0) {
 			if(this.action == 0)
-				return "Recomendation: Buy on Low";
+				return "Buy";
 			else
-				return "Action: Buy on Low";
+				return "Bought";
 		} else{
 			if(this.action == 0)
-				return "Recomendation: Sell on High";
+				return "Sell";
 			else
-				return "Action: Sell on High";
+				return "Sold";
 		}
 	}
 }

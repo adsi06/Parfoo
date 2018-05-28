@@ -5,6 +5,8 @@ import org.apache.log4j.Logger;
 public class SendData {
 	private final static Logger LOG = Logger.getLogger(SendData.class);
 	private String link;
+	private Algoritmo a;
+	private Recomendacion rec;
 	private PetitionREST rest;
 	private double data[];
 	private String parameters[] = {"count", "highPrice", "lowPrice", "openPrice", "priceChangePercent"};
@@ -16,6 +18,8 @@ public class SendData {
 	
 	public void setParameters(String symbol) {
 		data = Cryptos.ticker(symbol);
+		a = new Algoritmo(symbol, 1000, 5, 1.0, 0.9, 0.7);
+		rec = a.buySellAlgorithm(0.2, 0.5, data[4]);
 	}
 	
 	public String parseParameters() {
@@ -23,7 +27,7 @@ public class SendData {
 		for (int i = 0; i < data.length; i++) {
 			params += this.parameters[i] + "=" + this.data[i] + "&";
 		}
-		params = params.substring(0, params.length() - 1);
+		params += "buy=" + this.rec.toString();
 		LOG.info(params);
 		return params;
 	}
