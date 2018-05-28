@@ -24,3 +24,5 @@ hs_err_pid*
 
 # Almacenamiento local de MacOS
 .DS_Store
+/.metadata/
+/.recommenders/
