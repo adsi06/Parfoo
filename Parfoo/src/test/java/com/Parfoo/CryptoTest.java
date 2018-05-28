@@ -26,7 +26,7 @@ public class CryptoTest {
 	
 	public void testCryptoPrice() {
 		for(int i=0; i<symbol.length; i++){
-			LOG.info(Cryptos.precio(symbol[i]));
+			LOG.info(Cryptos.getPrecio(symbol[i]));
 		}
 	}
 	

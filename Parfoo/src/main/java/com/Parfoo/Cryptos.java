@@ -26,6 +26,7 @@ public class Cryptos
 	 */
 	
 	public static double precio(String symbol)  {
+
 		double ret=0;
 		JsonReader jr = new JsonReader();
   		JSONObject json;
