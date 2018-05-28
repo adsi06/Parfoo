@@ -88,16 +88,14 @@ public class Algoritmo {
      * 
      * Fin del algoritmo cuando el usuario así lo decida
      */
-    public Recomendacion buySellAlgorithm(double amoutSellPercentage, double cryptoBuyCuantity, double prevPrice){
-    		Recomendacion recomendation = null;;
-    		double difference, percentage, sufficientMoney, currentPrice;
+    public Recomendacion buySellAlgorithm(double amoutSellPercentage, double cryptoBuyCuantity, double percentage){
+    	Recomendacion recomendation = null;;
+    	double sufficientMoney, currentPrice;
         currentPrice = Cryptos.precio(this.SYMBOL);
-        difference = currentPrice - prevPrice;
         
-        LOGGER.info("Difference: " + difference + " MN: " + this.currentMoney + " CR: " + this.currentCrypto);
+        LOGGER.info("Percentage: " + percentage + " MN: " + this.currentMoney + " CR: " + this.currentCrypto);
         
-        if(difference >= 0){//Venta en caso de alta de precio
-            percentage = difference / prevPrice;
+        if(percentage >= 0){//Venta en caso de alta de precio
             
             if(percentage < this.SELL_ON_HIGH_PERCENTAGE) {
                 recomendation = new Recomendacion(1, 0); //Recomendation: Sell on High
@@ -109,7 +107,7 @@ public class Algoritmo {
                 }
             }
         } else {//Venta o compra en caso de baja de precio
-            percentage = (-1) * difference / prevPrice;
+            percentage *= -1;
             
             if(percentage < this.BUY_ON_LOW_PERCENTAGE){
             		recomendation = new Recomendacion(0, 0); //Recomendation: Buy on Low

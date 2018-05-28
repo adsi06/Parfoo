@@ -24,7 +24,6 @@ public class Cryptos
 	 * @param symbol
 	 * @return
 	 */
-	
 	public static double precio(String symbol)  {
 
 		double ret=0;
@@ -34,6 +33,31 @@ public class Cryptos
 			json = jr.readJsonFromUrl(URLprice+symbol);
 			Criptomoneda cripto = jr.setPrice(json);
 			ret=cripto.getPrice();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			LOG.error(e.toString());
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			ret=0;
+		}
+  		return ret; 
+	}
+	
+	/**
+	 * Se pide el cambio en el precio de la criptomoneda
+	 * Se regresa en un double
+	 * @param symbol
+	 * @return
+	 */
+	public static double percentage(String symbol)  {
+
+		double ret=0;
+		JsonReader jr = new JsonReader();
+  		JSONObject json;
+		try {
+			json = jr.readJsonFromUrl(URLprice+symbol);
+			Criptomoneda cripto = jr.setPrice(json);
+			ret=cripto.getPriceChangePercent();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			LOG.error(e.toString());
