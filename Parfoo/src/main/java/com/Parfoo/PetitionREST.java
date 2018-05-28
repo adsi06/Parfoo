@@ -6,8 +6,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import javax.net.ssl.HttpsURLConnection;
-
 import org.apache.log4j.Logger;
 
 public class PetitionREST {
@@ -92,7 +90,7 @@ public class PetitionREST {
 			URL url = new URL(ip);
 			LOG.info("Inicializando la conexión...");
 			// Conexión básica de HTTPS
-			HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("POST");
 			LOG.info("Configurando las propiedades del requerimiento...");
 			connection.setRequestProperty("User-Agent", this.USER_AGENT);
@@ -110,7 +108,7 @@ public class PetitionREST {
 			String line = input.readLine();
 			buffer = new StringBuffer();
 			LOG.info("Generando el HTML de respuesta...");
-			while (!line.isEmpty()) {
+			while (line != null) {
 				buffer.append(line);
 				line = input.readLine(); // Cada nueva línea del HTMl
 			}

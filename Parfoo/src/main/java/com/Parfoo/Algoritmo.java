@@ -91,7 +91,7 @@ public class Algoritmo {
     public Recomendacion buySellAlgorithm(double amoutSellPercentage, double cryptoBuyCuantity, double prevPrice){
     		Recomendacion recomendation = null;;
     		double difference, percentage, sufficientMoney, currentPrice;
-        currentPrice = Cryptos.getPrecio(this.SYMBOL);
+        currentPrice = Cryptos.precio(this.SYMBOL);
         difference = currentPrice - prevPrice;
         
         LOGGER.info("Difference: " + difference + " MN: " + this.currentMoney + " CR: " + this.currentCrypto);
@@ -146,7 +146,7 @@ public class Algoritmo {
     		
     		while(i++ < iterations) {
     			try {
-    				prevPrice = Cryptos.getPrecio(this.SYMBOL);
+    				prevPrice = Cryptos.precio(this.SYMBOL);
     				TimeUnit.SECONDS.sleep(3); //Se esperan 3 segundo entre cada iteración del algoritmo
     				LOGGER.info("Iteration #" + i);
     				output = buySellAlgorithm(amoutSellPercentage, cryptoBuyCuantity, prevPrice);
