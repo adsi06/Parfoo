@@ -36,12 +36,14 @@ public class SendData {
 	
 	public void sendPost(String symbol) {
 		this.setParameters(symbol);
+		System.out.println(this.link);
+		System.out.println(parseParameters());
 		boolean resp = this.rest.sendPOST(this.link, parseParameters());
 		System.out.println(resp);
 	}
 	
 	public static void main(String[] args) {
 		SendData data = new SendData("http://localhost:1337/data");
-		data.sendGet("BTCUSDT");
+		data.sendPost("BTCUSDT");
 	}
 }
