@@ -4804,3 +4804,101 @@
 2018-05-27 17:40:58:014 INFO  JsonReaderTest:20 - https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
 2018-05-27 17:40:58:523 INFO  JsonReaderTest:30 - {"priceChange":"-0.00194100","symbol":"ETHBTC","askPrice":"0.07780500","bidQty":"10.00000000","count":158286,"openPrice":"0.07974600","lastId":65277371,"quoteVolume":"7891.39210805","bidPrice":"0.07771900","firstId":65119086,"volume":"100959.77800000","lastQty":"0.53600000","askQty":"2.03400000","weightedAvgPrice":"0.07816372","lowPrice":"0.07658000","highPrice":"0.08038800","closeTime":1527478857889,"prevClosePrice":"0.07974600","openTime":1527392457889,"priceChangePercent":"-2.434","lastPrice":"0.07780500"}
 2018-05-27 17:40:58:823 ERROR JsonReaderTest:32 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:23:979 INFO  CryptoTest:15 - ETHBTC
+2018-05-27 23:53:23:985 INFO  CryptoTest:15 - ETHBT
+2018-05-27 23:53:25:945 INFO  CryptoTest:22 - 169880.0
+2018-05-27 23:53:26:386 INFO  CryptoTest:22 - 0.080388
+2018-05-27 23:53:26:831 INFO  CryptoTest:22 - 0.076
+2018-05-27 23:53:27:261 INFO  CryptoTest:22 - 0.079659
+2018-05-27 23:53:27:718 INFO  CryptoTest:22 - -4.493
+2018-05-27 23:53:28:553 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:29:581 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:29:581 INFO  CryptoTest:22 - 0.0
+2018-05-27 23:53:30:598 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:31:813 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:31:814 INFO  CryptoTest:22 - 0.0
+2018-05-27 23:53:32:223 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:32:636 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:32:637 INFO  CryptoTest:22 - 0.0
+2018-05-27 23:53:33:065 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:33:471 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:33:472 INFO  CryptoTest:22 - 0.0
+2018-05-27 23:53:33:860 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:34:260 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:34:261 INFO  CryptoTest:22 - 0.0
+2018-05-27 23:53:34:700 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:34:705 INFO  PetitionRESTTest:17 - Inicializando la prueba
+2018-05-27 23:53:34:706 INFO  PetitionRESTTest:29 - Iniciando prueba GET...
+2018-05-27 23:53:34:707 INFO  PetitionRESTTest:30 - URL a usar -> http://www.google.com/search?q=tesla
+2018-05-27 23:53:34:707 INFO  PetitionREST:44 - Checando nueva petición GET
+2018-05-27 23:53:34:713 INFO  PetitionREST:48 - Inicializando la conexión...
+2018-05-27 23:53:34:714 INFO  PetitionREST:52 - Configurando las propiedades del requerimiento...
+2018-05-27 23:53:34:715 INFO  PetitionREST:54 - Obteniendo el código de respuesta...
+2018-05-27 23:53:35:253 INFO  PetitionREST:57 - El código de respuesta fue: 200
+2018-05-27 23:53:35:748 INFO  PetitionREST:62 - Generando el HTML de respuesta...
+2018-05-27 23:53:35:753 INFO  PetitionREST:68 - Fin del HTML de respuesta
+2018-05-27 23:53:35:754 INFO  PetitionRESTTest:33 - Prueba exitosa
+2018-05-27 23:53:35:757 INFO  PetitionRESTTest:46 - Iniciando prueba POST...
+2018-05-27 23:53:35:759 INFO  PetitionRESTTest:47 - URL a usar -> https://chart.googleapis.com/chart
+2018-05-27 23:53:35:760 INFO  PetitionRESTTest:48 - Parámetros a usar -> cht=lc&chtt=MyChart&chs=600x200&chxt=x,y&chd=t:40,20,50,20,100
+2018-05-27 23:53:35:761 INFO  PetitionREST:87 - Checando nueva petición POST
+2018-05-27 23:53:35:762 INFO  PetitionREST:91 - Inicializando la conexión...
+2018-05-27 23:53:35:764 INFO  PetitionREST:95 - Configurando las propiedades del requerimiento...
+2018-05-27 23:53:36:023 INFO  PetitionREST:103 - Obteniendo el código de respuesta...
+2018-05-27 23:53:36:126 INFO  PetitionREST:110 - Generando el HTML de respuesta...
+2018-05-27 23:53:36:148 INFO  PetitionREST:116 - Fin del HTML de respuesta
+2018-05-27 23:53:36:149 INFO  PetitionRESTTest:51 - Prueba exitosa
+2018-05-27 23:53:36:150 INFO  PetitionRESTTest:22 - Fin de la prueba
+2018-05-27 23:53:36:153 INFO  JsonReaderTest:19 - https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBTC
+2018-05-27 23:53:36:154 INFO  JsonReaderTest:20 - https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:36:577 INFO  JsonReaderTest:30 - {"priceChange":"-0.00352400","symbol":"ETHBTC","askPrice":"0.07612900","bidQty":"6.99100000","count":169896,"openPrice":"0.07965300","lastId":65293879,"quoteVolume":"8201.82812791","bidPrice":"0.07607700","firstId":65123984,"volume":"105170.40800000","lastQty":"0.56100000","askQty":"0.33600000","weightedAvgPrice":"0.07798608","lowPrice":"0.07600000","highPrice":"0.08038800","closeTime":1527483216351,"prevClosePrice":"0.07971500","openTime":1527396816351,"priceChangePercent":"-4.424","lastPrice":"0.07612900"}
+2018-05-27 23:53:36:785 ERROR JsonReaderTest:32 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:50:214 INFO  CryptoTest:15 - ETHBTC
+2018-05-27 23:53:50:229 INFO  CryptoTest:15 - ETHBT
+2018-05-27 23:53:51:805 INFO  CryptoTest:22 - 169932.0
+2018-05-27 23:53:52:209 INFO  CryptoTest:22 - 0.080388
+2018-05-27 23:53:52:628 INFO  CryptoTest:22 - 0.076
+2018-05-27 23:53:53:417 INFO  CryptoTest:22 - 0.079652
+2018-05-27 23:53:53:830 INFO  CryptoTest:22 - -4.393
+2018-05-27 23:53:54:252 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:54:809 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:54:824 INFO  CryptoTest:22 - 0.0
+2018-05-27 23:53:55:278 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:55:726 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:55:727 INFO  CryptoTest:22 - 0.0
+2018-05-27 23:53:56:182 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:56:593 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:56:594 INFO  CryptoTest:22 - 0.0
+2018-05-27 23:53:57:069 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:57:537 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:57:538 INFO  CryptoTest:22 - 0.0
+2018-05-27 23:53:57:944 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:58:358 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:58:359 INFO  CryptoTest:22 - 0.0
+2018-05-27 23:53:58:766 ERROR JsonReader:91 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:53:58:784 INFO  PetitionRESTTest:17 - Inicializando la prueba
+2018-05-27 23:53:58:786 INFO  PetitionRESTTest:29 - Iniciando prueba GET...
+2018-05-27 23:53:58:787 INFO  PetitionRESTTest:30 - URL a usar -> http://www.google.com/search?q=tesla
+2018-05-27 23:53:58:788 INFO  PetitionREST:44 - Checando nueva petición GET
+2018-05-27 23:53:58:788 INFO  PetitionREST:48 - Inicializando la conexión...
+2018-05-27 23:53:58:789 INFO  PetitionREST:52 - Configurando las propiedades del requerimiento...
+2018-05-27 23:53:58:790 INFO  PetitionREST:54 - Obteniendo el código de respuesta...
+2018-05-27 23:53:59:113 INFO  PetitionREST:57 - El código de respuesta fue: 200
+2018-05-27 23:53:59:484 INFO  PetitionREST:62 - Generando el HTML de respuesta...
+2018-05-27 23:53:59:490 INFO  PetitionREST:68 - Fin del HTML de respuesta
+2018-05-27 23:53:59:490 INFO  PetitionRESTTest:33 - Prueba exitosa
+2018-05-27 23:53:59:492 INFO  PetitionRESTTest:46 - Iniciando prueba POST...
+2018-05-27 23:53:59:493 INFO  PetitionRESTTest:47 - URL a usar -> https://chart.googleapis.com/chart
+2018-05-27 23:53:59:493 INFO  PetitionRESTTest:48 - Parámetros a usar -> cht=lc&chtt=MyChart&chs=600x200&chxt=x,y&chd=t:40,20,50,20,100
+2018-05-27 23:53:59:494 INFO  PetitionREST:87 - Checando nueva petición POST
+2018-05-27 23:53:59:494 INFO  PetitionREST:91 - Inicializando la conexión...
+2018-05-27 23:53:59:496 INFO  PetitionREST:95 - Configurando las propiedades del requerimiento...
+2018-05-27 23:53:59:655 INFO  PetitionREST:103 - Obteniendo el código de respuesta...
+2018-05-27 23:54:00:096 INFO  PetitionREST:110 - Generando el HTML de respuesta...
+2018-05-27 23:54:00:185 INFO  PetitionREST:116 - Fin del HTML de respuesta
+2018-05-27 23:54:00:185 INFO  PetitionRESTTest:51 - Prueba exitosa
+2018-05-27 23:54:00:188 INFO  PetitionRESTTest:22 - Fin de la prueba
+2018-05-27 23:54:00:206 INFO  JsonReaderTest:19 - https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBTC
+2018-05-27 23:54:00:207 INFO  JsonReaderTest:20 - https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
+2018-05-27 23:54:00:702 INFO  JsonReaderTest:30 - {"priceChange":"-0.00354800","symbol":"ETHBTC","askPrice":"0.07616400","bidQty":"9.80000000","count":169949,"openPrice":"0.07965200","lastId":65293944,"quoteVolume":"8202.35218319","bidPrice":"0.07610400","firstId":65123996,"volume":"105177.53900000","lastQty":"0.13000000","askQty":"0.11900000","weightedAvgPrice":"0.07798578","lowPrice":"0.07600000","highPrice":"0.08038800","closeTime":1527483240423,"prevClosePrice":"0.07965200","openTime":1527396840423,"priceChangePercent":"-4.454","lastPrice":"0.07610400"}
+2018-05-27 23:54:00:914 ERROR JsonReaderTest:32 - java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBT
