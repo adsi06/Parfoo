@@ -1,0 +1,35 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/Tablero"
+  schedule:
+    interval: daily
+    time: "07:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: npm
+  directory: "/GUI"
+  schedule:
+    interval: daily
+    time: "07:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: sails
+    versions:
+    - 1.4.0
+  - dependency-name: grunt
+    versions:
+    - 1.3.0
+  - dependency-name: sails-hook-orm
+    versions:
+    - 3.0.1
+- package-ecosystem: maven
+  directory: "/Parfoo"
+  schedule:
+    interval: daily
+    time: "07:00"
+  open-pull-requests-limit: 10
+  target-branch: dev
+  ignore:
+  - dependency-name: org.json:json
+    versions:
+    - "20201115"
